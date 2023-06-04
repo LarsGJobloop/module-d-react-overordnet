@@ -1,5 +1,5 @@
 .section {
-  min-height: 100svh;
+  min-height: calc(100svh - var(--navabar-height));
 
-  scroll-margin-top: 4rem;
+  scroll-margin-top: var(--navabar-height);
 }

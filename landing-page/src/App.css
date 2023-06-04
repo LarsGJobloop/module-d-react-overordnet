@@ -5,12 +5,10 @@
   min-height: 100svh;
 
   background-color: var(--color-gray-300);
-}
 
-.App>header {}
+  --navabar-height: 4rem;
+}
 
 .App>main {
   flex-grow: 1;
 }
-
-.App>footer {}

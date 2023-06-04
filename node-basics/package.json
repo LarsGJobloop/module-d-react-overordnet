@@ -1,0 +1,15 @@
+{
+  "name": "basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "greeting": "./bin/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

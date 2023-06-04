@@ -50,6 +50,7 @@ When does React decide to rerender components?
 #### Asynchronous Code in React with useEffect
 
 Introduce useEffect.
+[Link to API documentation](https://realworld-docs.netlify.app/docs/specs/frontend-specs/swagger)
 
 #### Handling errors
 

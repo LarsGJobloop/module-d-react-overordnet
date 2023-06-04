@@ -1,34 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import favicon from '/favicon.svg'
+// Vite provides a way of importing css files using the Node Modules syntaxt
+import './styles/normalize.css'
+import './styles/palettes.css'
+import './styles/typography.css'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import { Navbar } from './components/Navbar/Navbar'
+import { Footer } from './components/Footer/Footer'
 
+function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={favicon} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className='App'>
+      <Navbar />
+
+      <main>
+        <section id='top'>
+          <h1>Section Top</h1>
+
+        </section>
+
+        <section id='mid'>
+          <h1>Section Middel</h1>
+
+        </section>
+
+        <section id='bot'>
+          <h1>Section Bottom</h1>
+
+        </section>
+      </main>
+
+      <Footer />
+    </div>
   )
 }
 

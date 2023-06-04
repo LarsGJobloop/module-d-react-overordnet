@@ -6,6 +6,7 @@ import './App.css'
 
 import { Navbar } from './components/Navbar/Navbar'
 import { Footer } from './components/Footer/Footer'
+import { CustomSection } from './components/CustomSection/CustomSection'
 
 function App() {
   return (
@@ -13,20 +14,20 @@ function App() {
       <Navbar />
 
       <main>
-        <section id='top'>
+        <CustomSection id='top'>
           <h1>Section Top</h1>
 
-        </section>
+        </CustomSection>
 
-        <section id='mid'>
+        <CustomSection id='mid'>
           <h1>Section Middel</h1>
 
-        </section>
+        </CustomSection>
 
-        <section id='bot'>
+        <CustomSection id='bot'>
           <h1>Section Bottom</h1>
 
-        </section>
+        </CustomSection>
       </main>
 
       <Footer />

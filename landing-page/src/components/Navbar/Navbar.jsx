@@ -7,9 +7,9 @@ export function Navbar() {
 
       <nav>
         <ul className={style.navigationMain}>
-          <li><a href="">Top Section</a></li>
-          <li><a href="">Middle Section</a></li>
-          <li><a href="">Bottom Section</a></li>
+          <li><a href="#top">Top Section</a></li>
+          <li><a href="#mid">Middle Section</a></li>
+          <li><a href="#bot">Bottom Section</a></li>
         </ul>
       </nav>
     </header>

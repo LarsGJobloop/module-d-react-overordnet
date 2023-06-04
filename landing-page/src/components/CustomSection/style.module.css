@@ -1,0 +1,5 @@
+.section {
+  min-height: 100svh;
+
+  scroll-margin-top: 4rem;
+}

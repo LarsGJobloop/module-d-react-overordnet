@@ -39,7 +39,7 @@ Creating components from data and loading the data.
 
 ### Week #2
 
-#### Various ways to create dynamic components
+#### Keeping things styled and organized
 
 CSS Modules and alternative ways of styling.
 

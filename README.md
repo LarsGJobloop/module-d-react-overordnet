@@ -92,11 +92,15 @@ Get feedback and repeat difficult portions.
 
 - [Node Documentation](https://nodejs.org/en)
 - [Node Package Manager Documentation](https://docs.npmjs.com/)
+  <br> These two are alternatives package managers to NPM
+  - [Yarn Package Manager](https://classic.yarnpkg.com/lang/en/docs/)
+  - [pnPM](https://pnpm.io/)
 - [React Documentation](https://react.dev/)
 - [Vite Documentation](https://vitejs.dev/)
 - [ESLint Documentation](https://eslint.org/)
 
 - [Learning Roadmaps](https://roadmap.sh/react)
+  <br> If you don't know what to learn next have a look here and pick something you do not understand.
 
 ### Recommended 3rd party libraries
 

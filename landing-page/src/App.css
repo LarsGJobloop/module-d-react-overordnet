@@ -12,3 +12,10 @@
 .App>main {
   flex-grow: 1;
 }
+
+.articleList {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  gap: 1rem;
+}

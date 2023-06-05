@@ -5,13 +5,13 @@ export function ArticleCard(props) {
     title,
     description,
     author,
-    body,
+    // body,
     favorited,
     favoritesCount,
-    slug,
+    // slug,
     tagList,
     createdAt,
-    updatedAt,
+    // updatedAt,
   } = props
 
   const createdAtFormatted = new Date(createdAt).toUTCString();

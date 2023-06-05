@@ -1,4 +1,4 @@
-# Modul D
+Enterprise Design Systems# Modul D
 
 ## Content
 
@@ -9,6 +9,9 @@
   - [Week 3](#week-3)
   - [Week 4](#week-4)
 - [Resources](#resources)
+  - [Important Links](#important-links)
+  - [3rd Party Libraries](#3rd-party-libraries)
+  - [Enterprise Design Systems](#3rd-party-libraries)
 
 ## About
 
@@ -61,11 +64,11 @@ Implement paths for every possible error when using the FetchAPI.
 
 #### SPA routing
 
-Introduce routing on the Frontend. Provide a setup for a multiple pages.
+Introduce routing on the Frontend. Provide a setup for a multiple pages. Include handling layouts with sublayouts.
 
 #### Lifting state up
 
-Introduce useContext.
+Introduce useContext. Collecting *cold* reactive state values
 
 #### Authenticating and Authorization
 
@@ -73,12 +76,14 @@ Storing secret tokens and using them for authentication or authorization.
 
 #### First dive into third party libraries
 
-
 ### Week #4
 
 #### Recap
 
-Get feedback and repeat difficult portions.
+Notation of previously problematic areas:
+
+  - ???
+  - ???
 
 #### Testing
 
@@ -87,36 +92,36 @@ This approch can work in tiny projects, where little changes over time. For larg
 
 This have you break down components of your application into simple functions that have to pass some form of specification testing to be deemed valid. Most 
 
-<details>
-  <summary>Unit Testing Example</summary>
+  <details>
+    <summary>Unit Testing Example</summary>
 
-  ```js
-    import { sortList } from './sortList.js'
+    ```js
+      import { sortList } from './sortList.js'
 
-    describe('sortList', () => {
-      it('should sort the list in ascending order', () => {
-        const unsortedList = [3, 1, 4, 2, 5];
-        const expectedSortedList = [1, 2, 3, 4, 5];
-        const sortedList = sortList(unsortedList);
-        expect(sortedList).toEqual(expectedSortedList);
+      describe('sortList', () => {
+        it('should sort the list in ascending order', () => {
+          const unsortedList = [3, 1, 4, 2, 5];
+          const expectedSortedList = [1, 2, 3, 4, 5];
+          const sortedList = sortList(unsortedList);
+          expect(sortedList).toEqual(expectedSortedList);
+        });
+
+        it('should return an empty array if the input list is empty', () => {
+          const unsortedList = [];
+          const expectedSortedList = [];
+          const sortedList = sortList(unsortedList);
+          expect(sortedList).toEqual(expectedSortedList);
+        });
+
+        it('should not modify the original list', () => {
+          const unsortedList = [3, 1, 4, 2, 5];
+          const sortedList = sortList(unsortedList);
+          expect(unsortedList).not.toEqual(sortedList);
+        });
       });
-
-      it('should return an empty array if the input list is empty', () => {
-        const unsortedList = [];
-        const expectedSortedList = [];
-        const sortedList = sortList(unsortedList);
-        expect(sortedList).toEqual(expectedSortedList);
-      });
-
-      it('should not modify the original list', () => {
-        const unsortedList = [3, 1, 4, 2, 5];
-        const sortedList = sortList(unsortedList);
-        expect(unsortedList).not.toEqual(sortedList);
-      });
-    });
-  ```
-</details>
-<br>
+    ```
+  </details>
+  <br>
 
 #### Complex State Managment
 
@@ -124,12 +129,12 @@ Introduces tools for managing complex state in a React application [React Redux]
 
 #### Rendering Strategies
 
-There are currently a coupl of ways we can create Web Applications / Sites.
+There are currently a couple of ways we can create Web Applications / Sites.
 
-- Upload a set of **Static** files to a web server, this includes Vanilla HTML, CSS and JS files.
-- Create a minimal HTML and send along enough JavaScript to generate the page on the **Client**.
-- Start a program on a **Server** and have it modify the page based on the incomming request.
-- Any combination of the previous three ways
+  - Upload a set of **Static** files to a web server, this includes Vanilla HTML, CSS and JS files.
+  - Create a minimal HTML and send along enough JavaScript to generate the page on the **Client**.
+  - Start a program on a **Server** and have it modify the page based on the incomming request.
+  - Any combination of the previous three ways
 
 To avoid going through the myriad of tools created for any or all of the strategy, we will look at one here.
 
@@ -140,46 +145,68 @@ To avoid going through the myriad of tools created for any or all of the strateg
 
 ### Important links
 
-- [Node Documentation](https://nodejs.org/en)
-- [Node Package Manager Documentation](https://docs.npmjs.com/)
-  <br> These two are alternatives package managers to NPM
-  - [Yarn Package Manager](https://classic.yarnpkg.com/lang/en/docs/)
-  - [pnPM](https://pnpm.io/)
-- [React Documentation](https://react.dev/)
-- [Vite Documentation](https://vitejs.dev/)
-- [ESLint Documentation](https://eslint.org/)
+  - [Node Documentation](https://nodejs.org/en)
+  - [Node Package Manager Documentation](https://docs.npmjs.com/)
+    <br> These two are alternatives package managers to NPM
+    - [Yarn Package Manager](https://classic.yarnpkg.com/lang/en/docs/)
+    - [pnPM](https://pnpm.io/)
+  - [React Documentation](https://react.dev/)
+  - [Vite Documentation](https://vitejs.dev/)
+  - [ESLint Documentation](https://eslint.org/)
 
-- [Learning Roadmaps](https://roadmap.sh/react)
-  <br> If you don't know what to learn next have a look here and pick something you do not understand.
+  - [Learning Roadmaps](https://roadmap.sh/react)
+    <br> If you don't know what to learn next have a look here and pick something you do not understand.
 
 ### 3rd party libraries
 
-- [React Icons](https://react-icons.github.io/react-icons/)
-<br> A collection of icons
+  - [React Icons](https://react-icons.github.io/react-icons/)
+    <br> A collection of icons
 
-- [Radix UI](https://www.radix-ui.com/)
-<br> Headless component library
+  - [Radix UI](https://www.radix-ui.com/)
+    <br> Headless component library
 
-- [Headless UI](https://headlessui.com/)
-<br> Headless component library
+  - [Headless UI](https://headlessui.com/)
+    <br> Headless component library
 
-- [React Aria](https://react-spectrum.adobe.com/react-aria/)
-<br> Headless component library
+  - [React Aria](https://react-spectrum.adobe.com/react-aria/)
+    <br> Headless component library
 
-- [Framer Motion](https://www.framer.com/motion/)
-<br> Library for animations
+  - [Framer Motion](https://www.framer.com/motion/)
+    <br> Library for animations
 
-- [React use](https://github.com/streamich/react-use)
-<br> An extension to the basic React hooks
+  - [React use](https://github.com/streamich/react-use)
+    <br> An extension to the basic React hooks
 
-- [TanStack Query / React Query](https://tanstack.com/query/latest/docs/react/overview)
-<br> Library for fetching data. Handles caching and simplifies errors.
+  - [TanStack Query / React Query](https://tanstack.com/query/latest/docs/react/overview)
+    <br> Library for fetching data. Handles caching and simplifies errors.
 
-- [SWR](https://swr.vercel.app/)
-<br> Library for fetching data. Handles caching and simplifies errors. Follows the **S**tale **W**hile **R**evalidate (SWR) caching strategy.
+  - [SWR](https://swr.vercel.app/)
+    <br> Library for fetching data. Handles caching and simplifies errors. Follows the **S**tale **W**hile **R**evalidate (SWR) caching strategy.
 
-- [Zustand](https://github.com/pmndrs/zustand)
-<br> Library for complex state management, a concrete example is the shopping cart for an e-commerce site.
+  - [Zustand](https://github.com/pmndrs/zustand)
+    <br> Library for complex state management, a concrete example is the shopping cart for an e-commerce site.
 
-- [React Redux](https://react-redux.js.org/)
-<br> Library for complex state management, a concrete example is the shopping cart for an e-commerce site.
+  - [React Redux](https://react-redux.js.org/)
+    <br> Library for complex state management, a concrete example is the shopping cart for an e-commerce site.
+
+### Enterprise Design Systems
+
+Here are a collection of Design System from larger developer groups. While these are likely to large to implement by oneself, they can provide quite a bit of inspiration of how to structure ones own projects, or advice against what not to do.
+
+  - [NAV Aksel](https://aksel.nav.no/)
+  - [Equinor Design System](https://eds.equinor.com/)
+  - [DNB Eufemia](https://eufemia.dnb.no/)
+
+#### Tools identified
+
+  - [Storybook](https://storybook.js.org/)
+    <br> A library for designing components in isolation
+
+  - [Design Tokens](https://uxplanet.org/design-tokens-a-design-system-superpower-dab07a5f0035)
+    <br> A common set of tokens to import as CSS variables for consistent styling across platforms
+
+  - [Monorepositories](https://monorepo.tools/)
+    <br> Instead of spreading a project over multiple packages everything is collected in a single Version Controlled repository.
+      - [NX](https://nx.dev/)
+      - [Turborepo](https://turbo.build/)
+      - [Bazel](https://bazel.build/)

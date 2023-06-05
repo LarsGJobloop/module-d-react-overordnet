@@ -6,6 +6,11 @@ body {
   margin: 0px;
 }
 
+ul,
+ol {
+  padding: 0px;
+}
+
 li {
   list-style-type: none;
 }

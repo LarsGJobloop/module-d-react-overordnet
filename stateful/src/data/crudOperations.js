@@ -1,7 +1,10 @@
 import { articlesResponse } from "./articles";
 
-export function getAllArticles() {
-  return articlesResponse.articles
+export function getArticleSet(start = 0, end = 4) {
+  return {
+    articles: articlesResponse.articles.slice(start, end),
+    numberOfArticles: articlesResponse.articlesCount
+  }
 }
 
 export function getArticle(slug) {

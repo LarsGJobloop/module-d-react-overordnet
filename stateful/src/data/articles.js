@@ -1317,5 +1317,5 @@ export const articlesResponse = {
       }
     }
   ],
-  "articlesCount": 197
+  "articlesCount": 60
 }

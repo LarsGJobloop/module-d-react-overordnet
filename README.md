@@ -127,4 +127,4 @@ Get feedback and repeat difficult portions.
 <br> Library for fetching data. Handles caching and simplifies errors.
 
 - [SWR](https://swr.vercel.app/)
-<br> Library for fetching data. Handles caching and simplifies errors. Follows the **S**tale **W**hile **R**evalidate caching strategy.
+<br> Library for fetching data. Handles caching and simplifies errors. Follows the **S**tale **W**hile **R**evalidate (SWR) caching strategy.

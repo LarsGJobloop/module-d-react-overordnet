@@ -19,40 +19,40 @@ This is using the Vite Build System.
 
 ### Week #1
 
-#### Node Basics
+#### [Node Basics](./node-basics/)
 
 Setting up a node package, and running some basic JavaScript.
 [Tutorial Link](https://dev.to/rushankhan1/build-a-cli-with-node-js-4jbi)
 
-#### Creating a page with Vite and React
+#### [Creating a page with Vite and React](./landing-page/)
 
 Creating a single page and basic introduction to components.
 
-#### Dynamic Components
+#### [Dynamic Components](./landing-page/)
 
 Component properties, children
 
-#### Properties and Listing out data
+#### [Properties and Listing out data](./landing-page/)
 
 Creating components from data and loading the data.
 
 
 ### Week #2
 
-#### Keeping things styled and organized
+#### [Keeping things styled and organized](./stateful/)
 
 CSS Modules and alternative ways of styling.
 
-#### React rendering and useState
+#### [React rendering and useState](./stateful/)
 
 When does React decide to rerender components?
 
-#### Asynchronous Code in React with useEffect
+#### [Asynchronous Code in React with useEffect](./stateful/)
 
 Introduce useEffect.
 [Link to API documentation](https://realworld-docs.netlify.app/docs/specs/frontend-specs/swagger)
 
-#### Handling errors
+#### [Handling errors](./stateful/)
 
 Implement paths for every possible error when using the FetchAPI.
 
@@ -80,11 +80,60 @@ Storing secret tokens and using them for authentication or authorization.
 
 Get feedback and repeat difficult portions.
 
-#### ??? 
+#### Testing
 
-#### ???
+Up until now you have written code and tested it until it passes some internal judgment of your that it is good enough.
+This approch can work in tiny projects, where little changes over time. For large and enduring projects. This is not viable. Hence the comming of Automated Testing. First to learn among them is Unit testing.
 
-#### ???
+This have you break down components of your application into simple functions that have to pass some form of specification testing to be deemed valid. Most 
+
+<details>
+  <summary>Unit Testing Example</summary>
+
+  ```js
+    import { sortList } from './sortList.js'
+
+    describe('sortList', () => {
+      it('should sort the list in ascending order', () => {
+        const unsortedList = [3, 1, 4, 2, 5];
+        const expectedSortedList = [1, 2, 3, 4, 5];
+        const sortedList = sortList(unsortedList);
+        expect(sortedList).toEqual(expectedSortedList);
+      });
+
+      it('should return an empty array if the input list is empty', () => {
+        const unsortedList = [];
+        const expectedSortedList = [];
+        const sortedList = sortList(unsortedList);
+        expect(sortedList).toEqual(expectedSortedList);
+      });
+
+      it('should not modify the original list', () => {
+        const unsortedList = [3, 1, 4, 2, 5];
+        const sortedList = sortList(unsortedList);
+        expect(unsortedList).not.toEqual(sortedList);
+      });
+    });
+  ```
+</details>
+<br>
+
+#### Complex State Managment
+
+Introduces tools for managing complex state in a React application [React Redux](https://react-redux.js.org/) and [Zustand](https://github.com/pmndrs/zustand)
+
+#### Rendering Strategies
+
+There are currently a coupl of ways we can create Web Applications / Sites.
+
+- Upload a set of **Static** files to a web server, this includes Vanilla HTML, CSS and JS files.
+- Create a minimal HTML and send along enough JavaScript to generate the page on the **Client**.
+- Start a program on a **Server** and have it modify the page based on the incomming request.
+- Any combination of the previous three ways
+
+To avoid going through the myriad of tools created for any or all of the strategy, we will look at one here.
+
+[NextJS](https://nextjs.org/) is the selfnamed *React Framework for the Web*. Among some of the functionality it provides is a relative simple way to decide when the React Components are going to be run. This allows for less hassle when deciding between [Client Side Rendering, Server Side Rendering or Static Site Generation](https://pagepro.co/blog/ssr-csr-ssg/).
 
 
 ## Resources
@@ -128,3 +177,9 @@ Get feedback and repeat difficult portions.
 
 - [SWR](https://swr.vercel.app/)
 <br> Library for fetching data. Handles caching and simplifies errors. Follows the **S**tale **W**hile **R**evalidate (SWR) caching strategy.
+
+- [Zustand](https://github.com/pmndrs/zustand)
+<br> Library for complex state management, a concrete example is the shopping cart for an e-commerce site.
+
+- [React Redux](https://react-redux.js.org/)
+<br> Library for complex state management, a concrete example is the shopping cart for an e-commerce site.

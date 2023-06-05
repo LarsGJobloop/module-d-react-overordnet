@@ -48,8 +48,8 @@ export function ArticleCard(props) {
       </header>
 
       <div className={style.main}>
-        <h1>{title}</h1>
-        <p>{description.slice(0, 130) + (body.length > 100 && "...")}</p>
+        <h1>{title.slice(0, 50) + (title.length > 50 && "...")}</h1>
+        <p>{description.slice(0, 130) + (description.length > 100 && "...")}</p>
       </div>
 
       <footer className={style.footer}>

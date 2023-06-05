@@ -13,7 +13,6 @@ export function ArticleList() {
   function previousPage() {
     if (currentPage <= 0) {
       setCurrentPage(0)
-      console.warn("trying to underflow article index")
       return
     }
     setCurrentPage(oldValue => oldValue - 4)
@@ -22,7 +21,6 @@ export function ArticleList() {
   function nextPage() {
     if (currentPage >= numberOfArticles - 4) {
       setCurrentPage(numberOfArticles - 4)
-      console.warn("trying to overflow article index")
       return
     }
     setCurrentPage(oldValue => oldValue + 4)

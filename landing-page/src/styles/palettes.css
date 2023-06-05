@@ -1,8 +1,8 @@
 :root {
-  // Palette gotten from here
-  // https://tailwindcss.com/docs/customizing-colors
+  /* Palette gotten from here */
+  /* https://tailwindcss.com/docs/customizing-colors */
 
-  // Tailwind Indigo
+  /* Tailwind Indigo */
   --color-primary-50: #eef2ff;
   --color-primary-100: #e0e7ff;
   --color-primary-200: #c7d2fe;
@@ -15,7 +15,7 @@
   --color-primary-900: #312e81;
   --color-primary-950: #1e1b4b;
 
-  // Tailwind Rose
+  /* Tailwind Rose */
   --color-secondary-50: #fff1f2;
   --color-secondary-100: #ffe4e6;
   --color-secondary-200: #fecdd3;
@@ -28,7 +28,7 @@
   --color-secondary-900: #881337;
   --color-secondary-950: #4c0519;
 
-  // Tailwind Amber
+  /* Tailwind Amber */
   --color-accent-50: #fffbeb;
   --color-accent-100: #fef3c7;
   --color-accent-200: #fde68a;
@@ -41,7 +41,7 @@
   --color-accent-900: #78350f;
   --color-accent-950: #451a03;
 
-  // Tailwind Gray
+  /* Tailwind Gray */
   --color-gray-50: #f9fafb;
   --color-gray-100: #f3f4f6;
   --color-gray-200: #e5e7eb;

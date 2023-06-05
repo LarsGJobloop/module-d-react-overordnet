@@ -4,11 +4,14 @@ import { ArticleCard } from '../ArticleCard/ArticleCard'
 import { useArticles } from '../../hooks/useArticles'
 
 export function ArticleList() {
-  const { currentArticles, nextSet, previousSet, currentIndex, articlesCount } = useArticles()
+  const {
+    currentArticles,
+    nextSet,
+    previousSet,
+  } = useArticles()
 
   return (
     <div>
-      <h1>Viewing: {currentIndex} / {articlesCount}</h1>
       <ul className={style.articleList}>
         {
           currentArticles &&
@@ -25,7 +28,7 @@ export function ArticleList() {
       </ul>
 
       <nav className={style.pagination}>
-        <button onClick={previousSet} className={style.arrow}>&#60;</button>
+        <button onClick={(previousSet)} className={style.arrow}>&#60;</button>
         <ul className={style.pages}>
           <li><button>1</button></li>
           <li><button>2</button></li>

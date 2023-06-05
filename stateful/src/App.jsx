@@ -24,7 +24,7 @@ function App() {
           <h1>Section Top</h1>
         </CustomSection>
 
-        <CustomSection id='mid'>
+        <CustomSection id='mid' coverScreen>
           <h1>List of articles</h1>
           <ArticleList />
         </CustomSection>

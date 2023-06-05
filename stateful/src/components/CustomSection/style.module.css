@@ -1,5 +1,14 @@
 .section {
+  display: flex;
+  flex-direction: column;
+}
+
+.cover {
   min-height: calc(100svh - var(--navabar-height));
 
   scroll-margin-top: var(--navabar-height);
+}
+
+.center {
+  align-items: center;
 }

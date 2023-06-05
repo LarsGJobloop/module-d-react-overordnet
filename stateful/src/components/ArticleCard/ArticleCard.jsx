@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import style from './style.module.css'
 
 export function ArticleCard(props) {
@@ -14,7 +15,13 @@ export function ArticleCard(props) {
     // updatedAt,
   } = props
 
+  const [isFavorited, setFavorited] = useState(favorited)
+
   const createdAtFormatted = new Date(createdAt).toUTCString();
+
+  function toggleFavorited() {
+    setFavorited(oldValue => !oldValue)
+  }
 
   return (
     <article className={style.article}>
@@ -34,10 +41,11 @@ export function ArticleCard(props) {
         <div>
           <button
             className={style.favorite}
+            onClick={toggleFavorited}
           >
             <span
               className={
-                favorited ? style.favorited : ""
+                isFavorited ? style.favorited : ""
               }
             >
               ❤️

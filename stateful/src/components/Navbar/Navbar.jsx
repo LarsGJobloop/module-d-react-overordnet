@@ -3,7 +3,9 @@ import style from './style.module.css'
 export function Navbar() {
   return (
     <header className={style.navbar}>
-      <div>Logo</div>
+      <a href="/">
+        Logo
+      </a>
 
       <nav>
         <ul className={style.navigationMain}>

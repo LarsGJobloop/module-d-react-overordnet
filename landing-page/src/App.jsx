@@ -44,7 +44,9 @@ function App() {
         <CustomSection id='bot'>
           <h1>Get a single article here</h1>
           {
-            <ArticleCard {...singleArticle} />
+            singleArticle
+              ? <ArticleCard {...singleArticle} />
+              : <h2>No Articles found</h2>
           }
         </CustomSection>
       </main>

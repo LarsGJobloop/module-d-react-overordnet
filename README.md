@@ -103,7 +103,7 @@ Get feedback and repeat difficult portions.
 - [Learning Roadmaps](https://roadmap.sh/react)
   <br> If you don't know what to learn next have a look here and pick something you do not understand.
 
-### Recommended 3rd party libraries
+### 3rd party libraries
 
 - [React Icons](https://react-icons.github.io/react-icons/)
 <br> A collection of icons

@@ -1,8 +1,8 @@
-import style from './style.module.css'
+import './style.css'
 
 export function Footer() {
   return (
-    <footer className={style.footer}>
+    <footer className="footer">
       © JobLoop 2021
     </footer>
   )

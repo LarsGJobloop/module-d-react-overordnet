@@ -1,10 +1,10 @@
-import style from './style.module.css'
+import './style.css'
 
 export function CustomSection(props) {
   const { children, id } = props;
 
   return (
-    <section id={id} className={style.section}>
+    <section id={id} className="section">
       {children}
     </section>
   )

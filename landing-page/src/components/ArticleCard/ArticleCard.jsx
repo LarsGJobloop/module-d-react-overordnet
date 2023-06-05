@@ -1,4 +1,4 @@
-import style from './style.module.css'
+import './style.css'
 
 export function ArticleCard(props) {
   const {
@@ -17,15 +17,15 @@ export function ArticleCard(props) {
   const createdAtFormatted = new Date(createdAt).toUTCString();
 
   return (
-    <article className={style.article}>
-      <header className={style.header}>
-        <div className={style.info}>
-          <img className={style.avatar} src={author.image} alt={`Avatar of ${author.username}`} />
-          <div className={style.intoText}>
-            <h2 className={style.alias}>
+    <article className="article">
+      <header className="articleHeader">
+        <div className="info">
+          <img className="avatar" src={author.image} alt={`Avatar of ${author.username}`} />
+          <div className="intoText">
+            <h2 className="alias">
               {author.username}
             </h2>
-            <h3 className={style.createdAt}>
+            <h3 className="createdAt">
               {createdAtFormatted}
             </h3>
           </div>
@@ -33,11 +33,11 @@ export function ArticleCard(props) {
 
         <div>
           <button
-            className={style.favorite}
+            className="favorite"
           >
             <span
               className={
-                favorited ? style.favorited : ""
+                favorited ? "favorited" : ""
               }
             >
               ❤️
@@ -47,15 +47,15 @@ export function ArticleCard(props) {
         </div>
       </header>
 
-      <div className={style.main}>
+      <div className="articleMain">
         <h1>{title}</h1>
         <p>{description.slice(0, 130) + (body.length > 100 && "...")}</p>
       </div>
 
-      <footer className={style.footer}>
+      <footer className="articleFooter">
         <a href="">Read more..</a>
 
-        <ul className={style.tagList}>
+        <ul className="tagList">
           {
             tagList.map(
               (tag) => {

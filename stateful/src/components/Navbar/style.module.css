@@ -1,0 +1,22 @@
+.navbar {
+  position: sticky;
+  top: 0px;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  height: var(--navbar-height);
+  padding: .1rem 1rem;
+
+  background-color: var(--color-accent-500);
+
+  font-weight: 600;
+  font-size: larger;
+}
+
+.navigationMain {
+  display: flex;
+  gap: 1rem;
+}

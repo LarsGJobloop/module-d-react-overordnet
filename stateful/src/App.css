@@ -1,0 +1,21 @@
+.App {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100svh;
+
+  background-color: var(--color-gray-300);
+
+  --navabar-height: 4rem;
+}
+
+.App>main {
+  flex-grow: 1;
+}
+
+.articleList {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  gap: 1rem;
+}

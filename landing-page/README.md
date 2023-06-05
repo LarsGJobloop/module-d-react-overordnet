@@ -43,7 +43,12 @@ npm run dev
 ```sh
 npm run build
 ```
-2. The result will be, by default, put into a new **dist/** folder
+2. The result will be, by default, put into a new **dist/** folder. The resulting files is what we call [artifacts](https://en.wikipedia.org/wiki/Artifact_(software_development))
+
+### Deploying your application
+
+To deploy your application, we have to upload the artifacts to a web server. The simplest way to do that is
+by using GitHub Pages. Follow the instructions [here](https://dev.to/rashidshamloo/deploying-vite-react-app-to-github-pages-35hf)
 
 ## Resources
 

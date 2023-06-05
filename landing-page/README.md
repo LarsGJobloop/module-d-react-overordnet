@@ -20,3 +20,8 @@ npm run dev
 4. To make some changes start by editing the return value of the function in [App.jsx](./src/App.jsx)
 
 5. To edit the title / favicon / link font types, do those edits inside [index.html](./index.html)
+
+## Resources
+
+- [API Link](https://realworld-docs.netlify.app/docs/specs/frontend-specs/swagger)
+- [ArticleCard Sketch](https://excalidraw.com/#json=ZgSA4gc66HUc3Ro5Heji4,47omrORbpF5FrHD5LsroVA)

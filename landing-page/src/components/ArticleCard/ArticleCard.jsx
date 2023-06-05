@@ -60,7 +60,7 @@ export function ArticleCard(props) {
             tagList.map(
               (tag) => {
                 return (
-                  <li>
+                  <li key={tag}>
                     <p>{tag}</p>
                   </li>
                 )

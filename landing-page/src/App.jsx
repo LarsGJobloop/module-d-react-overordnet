@@ -9,9 +9,12 @@ import { Footer } from './components/Footer/Footer'
 import { CustomSection } from './components/CustomSection/CustomSection'
 import { ArticleCard } from './components/ArticleCard/ArticleCard'
 
-import { articlesResponse } from './data/articles'
+import { getAllArticles, getArticle } from './data/crudOperations'
 
 function App() {
+  const articles = getAllArticles();
+  const singleArticle = getArticle("You-cant-transmit-the-firewall-without-copying-the-1080p-SDD-interface!-120863")
+
   return (
     <div className='App'>
       <Navbar />
@@ -24,20 +27,25 @@ function App() {
         <CustomSection id='mid'>
           <h1>List of articles</h1>
           <ul className='articleList'>
-            {articlesResponse.articles.map(
-              (article) => {
-                return (
-                  <li key={article.slug}>
-                    <ArticleCard {...article} />
-                  </li>
-                )
-              }
-            )}
+            {
+              articles.map(
+                (article) => {
+                  return (
+                    <li key={article.slug}>
+                      <ArticleCard {...article} />
+                    </li>
+                  )
+                }
+              )
+            }
           </ul>
         </CustomSection>
 
         <CustomSection id='bot'>
-          <h1>Section Bottom</h1>
+          <h1>Get a single article here</h1>
+          {
+            <ArticleCard {...singleArticle} />
+          }
         </CustomSection>
       </main>
 

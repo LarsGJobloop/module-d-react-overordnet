@@ -53,4 +53,5 @@ by using GitHub Pages. Follow the instructions [here](https://dev.to/rashidshaml
 ## Resources
 
 - [API Link](https://realworld-docs.netlify.app/docs/specs/frontend-specs/swagger)
+- [Design Dissection](https://excalidraw.com/#json=9S3EevnwPKTLGznwp8YiB,El2ErK6X_ccOzoc5ZB87ig)
 - [ArticleCard Sketch](https://excalidraw.com/#json=ZgSA4gc66HUc3Ro5Heji4,47omrORbpF5FrHD5LsroVA)
